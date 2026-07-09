@@ -55,12 +55,8 @@
   background-color: var(--green);
 }
 
-.footer-social-link svg {
-  transition: fill var(--transition-duration) var(--transition-timing);
-}
-
 .footer-subscribe {
-  margin-left: 80px;
+  margin-left: auto;
 }
 
 .footer-subscribe-title {
@@ -94,7 +90,7 @@
 }
 
 .footer-form-input::placeholder {
-  color: var(--cloud);
+  color: var(--white);
 }
 
 .footer-form-input:focus {
@@ -112,16 +108,18 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.04em;
   color: var(--white);
   background-color: var(--iris);
   border-radius: 4px;
   cursor: pointer;
-  transition: var(--transition);
+  transition:
+    background-color var(--transition-duration) var(--transition-timing),
+    box-shadow var(--transition-duration) var(--transition-timing);
 }
 
 .footer-form-btn:hover,
 .footer-form-btn:focus {
-  background-color: var(--ocean);
+  background-color: var(--green);
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
