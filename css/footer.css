@@ -58,3 +58,70 @@
 .footer-social-link svg {
   transition: fill var(--transition-duration) var(--transition-timing);
 }
+
+.footer-subscribe {
+  margin-left: 80px;
+}
+
+.footer-subscribe-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--white);
+  margin-bottom: 16px;
+}
+
+.footer-form {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.footer-form-input {
+  width: 264px;
+  height: 40px;
+  padding: 8px 16px;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: var(--cloud);
+  background-color: transparent;
+  border: 1px solid var(--white);
+  border-radius: 4px;
+  outline: none;
+  transition: border-color var(--transition-duration) var(--transition-timing);
+}
+
+.footer-form-input::placeholder {
+  color: var(--cloud);
+}
+
+.footer-form-input:focus {
+  border-color: var(--green);
+}
+
+.footer-form-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  min-width: 165px;
+  height: 40px;
+  padding: 8px 24px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--white);
+  background-color: var(--iris);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.footer-form-btn:hover,
+.footer-form-btn:focus {
+  background-color: var(--ocean);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+}
