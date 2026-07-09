@@ -1,0 +1,23 @@
+.features-list {
+  display: flex;
+  gap: 24px;
+}
+
+.features-item {
+  flex-basis: calc((100% - 72px) / 4);
+}
+
+.features-icon-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 112px;
+  margin-bottom: 8px;
+  background-color: var(--cloud);
+  border: 1px solid var(--light-slate);
+  border-radius: 4px;
+}
+
+.features-name {
+  margin-bottom: 8px;
+}
