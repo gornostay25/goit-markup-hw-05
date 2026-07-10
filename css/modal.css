@@ -46,11 +46,10 @@
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 50%;
   cursor: pointer;
-  transition: var(--transition);
-}
-
-.modal-close-btn svg {
-  transition: fill var(--transition-duration) var(--transition-timing);
+  transition:
+    background-color var(--transition-duration) var(--transition-timing),
+    border-color var(--transition-duration) var(--transition-timing),
+    color var(--transition-duration) var(--transition-timing);
 }
 
 .modal-close-btn:hover,
@@ -73,7 +72,10 @@
 .modal-form {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+}
+
+.form-field + .form-field {
+  margin-top: 8px;
 }
 
 .form-field {
@@ -134,15 +136,19 @@
   height: 120px;
   padding: 8px 16px;
   resize: none;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
   color: var(--navy-blue);
   background-color: transparent;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   outline: none;
   transition: border-color var(--transition-duration) var(--transition-timing);
+}
+
+.form-textarea::placeholder {
+  color: rgba(46, 47, 66, 0.4);
 }
 
 .form-textarea:focus {
@@ -152,6 +158,7 @@
 .form-checkbox {
   display: flex;
   align-items: flex-start;
+  margin-top: 16px;
 }
 
 .form-checkbox input {
@@ -172,7 +179,7 @@
   align-items: center;
   gap: 8px;
   font-size: 12px;
-  line-height: 1.33;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: var(--light-slate);
   cursor: pointer;
@@ -221,19 +228,24 @@
 
 .modal-form-btn {
   display: block;
-  width: 100%;
+  width: 169px;
+  margin-top: 24px;
+  margin-left: auto;
+  margin-right: auto;
   min-height: 56px;
   padding: 16px 0;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.04em;
   color: var(--white);
   background-color: var(--iris);
   border-radius: 4px;
   cursor: pointer;
-  box-shadow: none;
-  transition: var(--transition);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  transition:
+    background-color var(--transition-duration) var(--transition-timing),
+    box-shadow var(--transition-duration) var(--transition-timing);
 }
 
 .modal-form-btn:hover,
